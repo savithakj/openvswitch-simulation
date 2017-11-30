@@ -1,5 +1,4 @@
-#*#
-*.a
+
 *.d
 *.gcno
 *.gcda
@@ -51,7 +50,6 @@
 /distfiles
 /dist-docs
 /flake8-check
-/docs-check
 /install-sh
 /libtool
 /manpage-check
@@ -73,6 +71,3 @@ testsuite.tmp.orig
 /rpm/
 /openvswitch*.tar.gz
 /tests/lcov/
-/Documentation/_build
-/.venv
-/cxx-check

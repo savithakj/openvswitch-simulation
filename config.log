@@ -561,7 +561,7 @@ configure:13258: gcc -o conftest -g -O2   conftest.c  >&5
 conftest.c:35:6: warning: conflicting types for built-in function 'pow'
  char pow ();
       ^
-/tmp/ccGNByJy.o: In function `main':
+/tmp/cc2GPKvt.o: In function `main':
 /root/ovs/conftest.c:39: undefined reference to `pow'
 collect2: error: ld returned 1 exit status
 configure:13258: $? = 1
@@ -620,7 +620,7 @@ configure:13314: $? = 0
 configure:13331: result: none required
 configure:13339: checking for library containing timer_create
 configure:13370: gcc -o conftest -g -O2   conftest.c -lm  >&5
-/tmp/ccHyYEUG.o: In function `main':
+/tmp/cchmKXuB.o: In function `main':
 /root/ovs/conftest.c:39: undefined reference to `timer_create'
 collect2: error: ld returned 1 exit status
 configure:13370: $? = 1
@@ -672,7 +672,7 @@ configure:13370: $? = 0
 configure:13387: result: -lrt
 configure:13395: checking for library containing pthread_create
 configure:13426: gcc -o conftest -g -O2   conftest.c -lrt -lm  >&5
-/tmp/ccmx5zWL.o: In function `main':
+/tmp/ccAemMJu.o: In function `main':
 /root/ovs/conftest.c:39: undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
 configure:13426: $? = 1
@@ -1900,7 +1900,7 @@ configure:14823: gcc -o conftest -g -O2   conftest.c -lpthread -lrt -lm  >&5
 conftest.c:56:6: warning: conflicting types for built-in function '__atomic_load_8'
  char __atomic_load_8 ();
       ^
-/tmp/cckyAIod.o: In function `main':
+/tmp/ccISPjx2.o: In function `main':
 /root/ovs/conftest.c:60: undefined reference to `__atomic_load_8'
 collect2: error: ld returned 1 exit status
 configure:14823: $? = 1
@@ -2008,7 +2008,7 @@ configure:15045: $? = 0
 configure:15062: result: none required
 configure:15080: checking for pthread_set_name_np
 configure:15080: gcc -o conftest -g -O2   conftest.c -latomic -lpthread -lrt -lm  >&5
-/tmp/ccplM32w.o: In function `main':
+/tmp/ccnwtzut.o: In function `main':
 /root/ovs/conftest.c:88: undefined reference to `pthread_set_name_np'
 collect2: error: ld returned 1 exit status
 configure:15080: $? = 1

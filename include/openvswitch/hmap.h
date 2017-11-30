@@ -11,7 +11,6 @@
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
- *Shweta 
  * limitations under the License.
  */
 
@@ -136,7 +135,7 @@ struct hmap_node *hmap_random_node(const struct hmap *);
  * HMAP_FOR_EACH_*() macros.
  */
 #define HMAP_FOR_EACH_WITH_HASH(NODE, MEMBER, HASH, HMAP)               \
-    for (INIT_CONTAINER(NODE, hmap_next_with_hash(&(NODE)->MEMBER), MEMBER); \
+    for (INIT_CONTAINER(NODE, hmap_first_with_hash(HMAP, HASH), MEMBER); \
          (NODE != OBJECT_CONTAINING(NULL, NODE, MEMBER)) || (NODE = NULL); \
          ASSIGN_CONTAINER(NODE, hmap_next_with_hash(&(NODE)->MEMBER),   \
                           MEMBER))
