@@ -135,7 +135,7 @@ struct hmap_node *hmap_random_node(const struct hmap *);
  * HMAP_FOR_EACH_*() macros.
  */
 #define HMAP_FOR_EACH_WITH_HASH(NODE, MEMBER, HASH, HMAP)               \
-    for (INIT_CONTAINER(NODE, hmap_first_with_hash(HMAP, HASH), MEMBER); \
+    for (INIT_CONTAINER(NODE, hmap_next_with_hash(&(NODE)->MEMBER), MEMBER); \
          (NODE != OBJECT_CONTAINING(NULL, NODE, MEMBER)) || (NODE = NULL); \
          ASSIGN_CONTAINER(NODE, hmap_next_with_hash(&(NODE)->MEMBER),   \
                           MEMBER))
